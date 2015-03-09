@@ -4,8 +4,13 @@
 
 <html>
 <head>
-  <link rel="stylesheet" href="https://github.com/18F/scorecard/blob/master/bootstrap-3.3.2-dist/css/bootstrap.css">
-  <link rel="stylesheet" href="https://github.com/18F/scorecard/blob/master/style.css">
+  <link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="jquery-2.1.3.min.js"></script>
+  <script src="scorecard.js"></script>
+
+
 </head>
 
 <body>
@@ -14,11 +19,44 @@
 	<div class="row">
 		<div class="col-md-3">
 			<div class="tile lightblue">
+				test
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="tile lightblue black-border" data-scoretype="1-is-bad">
+				<div class="tile-caption black-border" >
+					Estimated total # of stakeholders that need to be involved for project success
+				</div>
+				<div class="score-box black-border">
+					<div style="height: 30px">
+						<div style="" class="black-border pull-left">Disagree</div>
+						<div style="" class="black-border pull-right">Agree</div>
+					</div>
+					<div style="width: 220px" class="score-div black-border center-block">
+
+						<button type="button" class="btn btn-xs btn-default score-button" value="1">1</button>
+						<button type="button" class="btn btn-xs btn-default score-button" value="2">2</button>			
+						<button type="button" class="btn btn-xs btn-default score-button" value="3">3</button>		
+						<button type="button" class="btn btn-xs btn-default score-button" value="4">4</button>			
+						<button type="button" class="btn btn-xs btn-default score-button" value="5">5</button>		
+
+					</div>
+
+				</div>
+				<div class="big-number">
+					
+				</div>
+			</div>			
+		</div>
+		<div class="col-md-3">
+			<div class="tile lightblue">
+				test
 			</div>
 		</div>
 		<div class="col-md-3">
 			<div class="tile lightblue">
-			</div>			
+				test
+			</div>
 		</div>
 
 	</div>

@@ -2,10 +2,73 @@
 
 
 .lightblue {
-	color: #ccccff;
+	background-color: #ccccff;
 }
 
 .tile {
-	width: 100%;
-	height: 100%;
+	width: 280px;
+	height: 280px;
+	padding: 20px;
+}
+
+.tile-caption {
+	font-size: 16pt;
+	height: 180px;
+}
+
+.big-number {
+	position:absolute;
+	top: 100px;
+	left:125px;
+	font-size: 88pt;
+	color: #545454;
+}
+
+.score-button {
+	font-size: 14pt;
+	width: 35px;
+	padding: 0px 10px 0px 10px;
+	margin-left: 5px;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.black-border {
+	/*border: solid 1px #000000;*/
+}
+
+.green-border {
+	border: solid 1px #00ff00;
+}
+
+.tile button:active, .tile button.active, .tile button:focus  {
+	 background-color: #00000 !important;
+} 
+
+.score-box { display: none 
+
+}
+
+.score-bad {
+	background-color: #ff3300;
+}
+
+.score-kinda-bad {
+	background-color: #ff9933;
+}
+
+.score-ok {
+	background-color: #ccccff;
+}
+
+.score-kinda-good {
+	background-color: #99ff99;
+}
+
+.score-great {
+	background-color: #33cc33;
 }
