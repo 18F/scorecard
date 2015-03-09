@@ -5,10 +5,13 @@
 $(function(){
 	//page setup
 
+	//setup tiles
+	setupTiles();
+
 	//tile mouseovers
 	$(".tile").on("mouseenter",function(){
-		$(this).find(".score-box").fadeIn("slow");
-		$(this).find(".big-number").fadeOut("slow");
+		$(this).find(".score-box").filter(":not(:animated)").fadeIn("slow");
+		$(this).find(".big-number").filter(":not(:animated)").fadeOut("slow");
 	});
 
 	$(".tile").on("mouseleave",function(){
@@ -26,6 +29,38 @@ $(function(){
 
 })
 
+
+var tile_detail = "<div class='score-box black-border'>" + 
+					"<div style='height: 30px'>" +
+						"<div class='black-border pull-left'>Disagree</div>" + 
+						"<div class='black-border pull-right'>Agree</div>" +
+					"</div>" + 
+					"<div style='width: 220px' class='score-div black-border center-block'>" +
+
+						"<button type='button' class='btn btn-xs btn-default score-button' value='1'>1</button>" +
+						"<button type='button' class='btn btn-xs btn-default score-button' value='2'>2</button>" +
+						"<button type='button' class='btn btn-xs btn-default score-button' value='3'>3</button>" +
+						"<button type='button' class='btn btn-xs btn-default score-button' value='4'>4</button>" +
+						"<button type='button' class='btn btn-xs btn-default score-button' value='5'>5</button>" +
+
+					"</div>" +
+
+				"</div>" + 
+				"<div class='big-number'>" +
+				"</div>"
+
+var setupTiles = function(){
+	//adds scoring and other elements to basic declaritive tiles
+	$(".tile").addClass("lightblue");
+	$(".tile").each(function(index){
+
+			$(this).find(".tile-caption").after(tile_detail);			
+
+
+	})
+
+
+}
 
 var updateTileColor = function(pButton){
 	var this_tile = $(pButton).parentsUntil(".col-md-3",".tile");
