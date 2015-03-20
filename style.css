@@ -12,6 +12,18 @@
 	background-color: #ccccff;
 }
 
+.red-triangle {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 20px 20px 0 0;
+border-color: #ff0000 transparent transparent transparent;
+position: absolute;
+left: 15px;
+top: 0px;
+
+}
+
 .section-tile {
 	width: 385px;
 	height: 185px;
